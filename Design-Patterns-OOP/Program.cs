@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Reflection.Metadata;
+using Design_Patterns_OOP.ChainOfResponsibility;
+using Design_Patterns_OOP.ChainOfResponsibility.EX;
 using Design_Patterns_OOP.Command;
 using Design_Patterns_OOP.Command.Editor;
 using Design_Patterns_OOP.Command.VideoEditor;
@@ -17,6 +19,7 @@ using Design_Patterns_OOP.Strategy.ChatClient;
 using Design_Patterns_OOP.Strategy.ImageStorage;
 using Design_Patterns_OOP.TemplateMethodPattern;
 using Design_Patterns_OOP.TemplateMethodPattern.Window;
+using Compressor = Design_Patterns_OOP.ChainOfResponsibility.Compressor;
 using Document = Design_Patterns_OOP.Memento.Document.Document;
 
 namespace Design_Patterns_OOP
@@ -32,8 +35,21 @@ namespace Design_Patterns_OOP
             // TemplateMethodCalls();
             // CommandCalls();
             // ObserverCalls();
+            // MediatorCalls();
+            ChainOfResponsibilityCalls();
+        }
 
-            MediatorCalls();
+        private static void ChainOfResponsibilityCalls()
+        {
+            var wServer = new WebServer(new Authenticator(new Logger(new Compressor(new Encryptor(null)))));
+            wServer.Handle(new HttpRequest("admin", "a"));
+            wServer.Handle(new HttpRequest("admin", "admin"));
+
+            var reader = DataReaderFactory.GetDataReaderChain();
+            reader.Read("data.xls");
+            reader.Read("data.numbers");
+            reader.Read("data.qbw");
+            reader.Read("data.jpg");
         }
 
         private static void MediatorCalls()
