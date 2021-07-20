@@ -4,6 +4,8 @@ using Design_Patterns_OOP.Command;
 using Design_Patterns_OOP.Command.Editor;
 using Design_Patterns_OOP.Command.VideoEditor;
 using Design_Patterns_OOP.Iterator;
+using Design_Patterns_OOP.Mediator;
+using Design_Patterns_OOP.Mediator.EX;
 using Design_Patterns_OOP.Memento;
 using Design_Patterns_OOP.Memento.Editor;
 using Design_Patterns_OOP.Memento.Document;
@@ -29,8 +31,17 @@ namespace Design_Patterns_OOP
             // StrategyCalls();
             // TemplateMethodCalls();
             // CommandCalls();
+            // ObserverCalls();
 
-            ObserverCalls();
+            MediatorCalls();
+        }
+
+        private static void MediatorCalls()
+        {
+            var dialog = new ArticleDialogBox();
+            dialog.SimulateUserInteraction();
+            var signUpDialog = new SignUpDialogBox();
+            signUpDialog.SimulateUserInteraction();
         }
 
         private static void ObserverCalls()
