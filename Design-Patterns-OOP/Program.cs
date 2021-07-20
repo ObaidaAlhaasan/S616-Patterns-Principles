@@ -7,6 +7,8 @@ using Design_Patterns_OOP.Iterator;
 using Design_Patterns_OOP.Memento;
 using Design_Patterns_OOP.Memento.Editor;
 using Design_Patterns_OOP.Memento.Document;
+using Design_Patterns_OOP.Observer;
+using Design_Patterns_OOP.Observer.Stock;
 using Design_Patterns_OOP.State;
 using Design_Patterns_OOP.State.DirectionService;
 using Design_Patterns_OOP.Strategy.ChatClient;
@@ -27,6 +29,37 @@ namespace Design_Patterns_OOP
             // StrategyCalls();
             // TemplateMethodCalls();
             // CommandCalls();
+
+            ObserverCalls();
+        }
+
+        private static void ObserverCalls()
+        {
+            var dataSource = new DataSource();
+            dataSource.AddObserver(new ChartClass(dataSource));
+            dataSource.AddObserver(new ChartClass(dataSource));
+            dataSource.AddObserver(new SpreadSheet(dataSource));
+            dataSource.SetValue(1000);
+
+            var statusBar = new StatusBar();
+            var stockListView = new StockListView();
+
+            var stock1 = new Stock("1", 10);
+            var stock2 = new Stock("2", 20);
+            var stock3 = new Stock("3", 30);
+
+            statusBar.AddStock(stock1);
+            statusBar.AddStock(stock2);
+
+
+            stockListView.AddStock(stock1);
+            stockListView.AddStock(stock2);
+            stockListView.AddStock(stock3);
+
+            stock2.SetPrice(21);
+
+
+            stock3.SetPrice(9);
         }
 
         private static void CommandCalls()
