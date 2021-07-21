@@ -19,8 +19,11 @@ using Design_Patterns_OOP.Strategy.ChatClient;
 using Design_Patterns_OOP.Strategy.ImageStorage;
 using Design_Patterns_OOP.TemplateMethodPattern;
 using Design_Patterns_OOP.TemplateMethodPattern.Window;
+using Design_Patterns_OOP.Visitor;
+using Design_Patterns_OOP.Visitor.EX;
 using Compressor = Design_Patterns_OOP.ChainOfResponsibility.Compressor;
 using Document = Design_Patterns_OOP.Memento.Document.Document;
+using HtmlDocument = Design_Patterns_OOP.Command.Editor.HtmlDocument;
 
 namespace Design_Patterns_OOP
 {
@@ -36,7 +39,24 @@ namespace Design_Patterns_OOP
             // CommandCalls();
             // ObserverCalls();
             // MediatorCalls();
-            ChainOfResponsibilityCalls();
+            // ChainOfResponsibilityCalls();
+            VisitorCalls();
+        }
+
+        private static void VisitorCalls()
+        {
+            var htmlDoc = new Visitor.HtmlDocument();
+            htmlDoc.Add(new HeadingNode());
+            htmlDoc.Add(new AnchorNode());
+
+            htmlDoc.Execute(new HighlightOperation());
+            htmlDoc.Execute(new PlainTextOperation());
+
+
+            var wavFile = WavFile.Read("myfile.wav");
+            wavFile.ApplyFilter(new NoiseReducerFilter());
+            wavFile.ApplyFilter(new ReverbFilter());
+            wavFile.ApplyFilter(new NormalizeFilter());
         }
 
         private static void ChainOfResponsibilityCalls()
