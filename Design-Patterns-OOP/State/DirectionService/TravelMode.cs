@@ -2,7 +2,7 @@
 {
     public abstract class TravelMode
     {
-        public abstract object GetETA();
+        public abstract object GetEta();
         public abstract object GetDirection();
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Design_Patterns_OOP.Mediator
 {
-    public abstract class UIControl
+    public abstract class UiControl
     {
         public IList<EventHandler> Observers { get; set; } = new List<EventHandler>();
 
@@ -19,7 +19,7 @@ namespace Design_Patterns_OOP.Mediator
         }
     }
 
-    public class ListBox : UIControl
+    public class ListBox : UiControl
     {
         public string Selection { get; private set; }
 
@@ -30,7 +30,7 @@ namespace Design_Patterns_OOP.Mediator
         }
     }
 
-    public class TextBox : UIControl
+    public class TextBox : UiControl
     {
         public string Content { get; private set; }
 
@@ -41,7 +41,7 @@ namespace Design_Patterns_OOP.Mediator
         }
     }
 
-    public class Button : UIControl
+    public class Button : UiControl
     {
         public bool IsEnabled { get; private set; }
 

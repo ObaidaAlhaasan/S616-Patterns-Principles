@@ -8,9 +8,9 @@ namespace Design_Patterns_OOP.State.DirectionService
 
         public DirectionService(TravelMode mode) => Mode = mode;
 
-        public object getEta() => Mode.GetETA();
+        public object GetEta() => Mode.GetEta();
 
-        public object getDirection() => Mode.GetDirection();
+        public object GetDirection() => Mode.GetDirection();
 
         public void SetTravelMode(TravelMode travelMode) => Mode = travelMode;
     }

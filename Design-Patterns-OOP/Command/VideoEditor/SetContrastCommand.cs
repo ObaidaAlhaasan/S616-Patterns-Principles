@@ -4,23 +4,23 @@ namespace Design_Patterns_OOP.Command.VideoEditor
 {
     public class SetContrastCommand : AbstractUndoableCommand
     {
-        private float prevContrast;
-        private float contrast;
+        private float _prevContrast;
+        private float _contrast;
 
         public SetContrastCommand(float contrast, VideoEditor videoEditor, History history) : base(history, videoEditor)
         {
-            prevContrast = videoEditor.Contrast;
-            this.contrast = contrast;
+            _prevContrast = videoEditor.Contrast;
+            this._contrast = contrast;
         }
 
         public override void DoExecute()
         {
-            VideoEditor.SetContrast(contrast);
+            VideoEditor.SetContrast(_contrast);
         }
 
         public override void UnExecute()
         {
-            VideoEditor.SetContrast(prevContrast);
+            VideoEditor.SetContrast(_prevContrast);
         }
     }
 }

@@ -31,7 +31,7 @@ namespace Design_Patterns_OOP.Iterator
     public class ListIterator : Iterator<BrowseHistory>
     {
         public BrowseHistory History { get; }
-        private int index { get; set; }
+        private int Index { get; set; }
 
         public ListIterator(BrowseHistory history)
         {
@@ -40,17 +40,17 @@ namespace Design_Patterns_OOP.Iterator
 
         public override bool HasNext()
         {
-            return index < History.Urls.Length;
+            return Index < History.Urls.Length;
         }
 
         public override void Next()
         {
-            index++;
+            Index++;
         }
 
         public override string Current()
         {
-            return History.Urls.ElementAt(index);
+            return History.Urls.ElementAt(Index);
         }
     }
 }

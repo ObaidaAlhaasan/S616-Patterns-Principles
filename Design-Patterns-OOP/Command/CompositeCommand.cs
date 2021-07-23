@@ -4,14 +4,14 @@ namespace Design_Patterns_OOP.Command
 {
     public class CompositeCommand : ICommand
     {
-        private IList<ICommand> Commands = new List<ICommand>();
+        private IList<ICommand> _commands = new List<ICommand>();
 
-        public void Add(ICommand command) => Commands.Add(command);
+        public void Add(ICommand command) => _commands.Add(command);
 
 
         public void Execute()
         {
-            foreach (var command in Commands) command.Execute();
+            foreach (var command in _commands) command.Execute();
         }
     }
 }

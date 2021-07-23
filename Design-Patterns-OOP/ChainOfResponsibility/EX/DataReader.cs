@@ -2,9 +2,9 @@
 {
     public abstract class DataReader
     {
-        private DataReader Next;
+        private DataReader _next;
 
-        public void SetNext(DataReader reader) => Next = reader;
+        public void SetNext(DataReader reader) => _next = reader;
 
         public void Read(string fileName)
         {
@@ -14,7 +14,7 @@
                 return;
             }
 
-            Next?.DoRead(fileName);
+            _next?.DoRead(fileName);
         }
 
         protected abstract void DoRead(string fileName);

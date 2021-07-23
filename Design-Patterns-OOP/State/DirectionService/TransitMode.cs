@@ -4,7 +4,7 @@ namespace Design_Patterns_OOP.State.DirectionService
 {
     public class TransitMode : TravelMode
     {
-        public override object GetETA()
+        public override object GetEta()
         {
             Console.WriteLine("Calculating ETA (transit)");
             return 3;

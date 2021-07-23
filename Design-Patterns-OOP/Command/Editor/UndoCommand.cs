@@ -4,16 +4,16 @@ namespace Design_Patterns_OOP.Command.Editor
 {
     public class UndoCommand : ICommand
     {
-        private History History;
+        private History _history;
 
         public UndoCommand(History history)
         {
-            History = history;
+            _history = history;
         }
 
         public void Execute()
         {
-            if (History.Size > 0) History.Pop().UnExecute();
+            if (_history.Size > 0) _history.Pop().UnExecute();
         }
     }
 }

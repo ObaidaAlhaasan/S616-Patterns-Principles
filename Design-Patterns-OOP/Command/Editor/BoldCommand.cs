@@ -5,25 +5,25 @@ namespace Design_Patterns_OOP.Command.Editor
     public class BoldCommand : IUndoableCommand
     {
         public string PrevContent { get; set; }
-        private HtmlDocument Document;
-        private History History;
+        private HtmlDocument _document;
+        private History _history;
 
         public BoldCommand(HtmlDocument document, History history)
         {
-            Document = document;
-            History = history;
+            _document = document;
+            _history = history;
         }
 
         public void Execute()
         {
-            PrevContent = Document.Content;
-            Document.MakeBold();
-            History.Push(this);
+            PrevContent = _document.Content;
+            _document.MakeBold();
+            _history.Push(this);
         }
 
         public void UnExecute()
         {
-            Document.SetContent(PrevContent);
+            _document.SetContent(PrevContent);
         }
     }
 }

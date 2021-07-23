@@ -1,6 +1,6 @@
 ﻿namespace Design_Patterns_OOP.Mediator.EX
 {
-    public class Checkbox : UIControl
+    public class Checkbox : UiControl
     {
         public bool IsChecked { get; private set; }
 

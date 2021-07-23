@@ -1,6 +1,6 @@
 ﻿namespace Design_Patterns_OOP.Mediator.EX
 {
-    public class TextBox : UIControl
+    public class TextBox : UiControl
     {
         public string Type { get; private set; }
         public string Content { get; private set; }

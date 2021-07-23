@@ -4,7 +4,7 @@ namespace Design_Patterns_OOP.State.DirectionService
 {
     public class WalkingMode : TravelMode
     {
-        public override object GetETA()
+        public override object GetEta()
         {
             Console.WriteLine("Calculating ETA (walking)");
             return 4;

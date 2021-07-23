@@ -7,7 +7,7 @@ namespace Design_Patterns_OOP.Strategy.ChatClient
         public abstract string Encrypt(string msg);
     }
 
-    public class DES : EncryptionAlgorithm
+    public class Des : EncryptionAlgorithm
     {
         public override string Encrypt(string msg)
         {
@@ -16,7 +16,7 @@ namespace Design_Patterns_OOP.Strategy.ChatClient
         }
     }
 
-    public class AES : EncryptionAlgorithm
+    public class Aes : EncryptionAlgorithm
     {
         public override string Encrypt(string msg)
         {

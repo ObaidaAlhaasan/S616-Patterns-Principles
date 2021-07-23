@@ -1,29 +1,58 @@
 ﻿using System;
 using System.Reflection.Metadata;
+using Design_Patterns_OOP.Adapter;
 using Design_Patterns_OOP.ChainOfResponsibility;
 using Design_Patterns_OOP.ChainOfResponsibility.EX;
 using Design_Patterns_OOP.Command;
 using Design_Patterns_OOP.Command.Editor;
-using Design_Patterns_OOP.Command.VideoEditor;
+using Design_Patterns_OOP.Composite;
+using Design_Patterns_OOP.Composite.EX;
+using Design_Patterns_OOP.Decorator;
+using Design_Patterns_OOP.Exercises.ChainOfResponsibility;
+using Design_Patterns_OOP.Exercises.Command;
+using Design_Patterns_OOP.Exercises.Iterator;
+using Design_Patterns_OOP.Exercises.Mediator;
+using Design_Patterns_OOP.Exercises.Memento;
+using Design_Patterns_OOP.Exercises.Observer;
+using Design_Patterns_OOP.Exercises.State;
+using Design_Patterns_OOP.Exercises.Strategy;
+using Design_Patterns_OOP.Exercises.TemplateMethod;
+using Design_Patterns_OOP.Exercises.Visitor;
 using Design_Patterns_OOP.Iterator;
 using Design_Patterns_OOP.Mediator;
 using Design_Patterns_OOP.Mediator.EX;
-using Design_Patterns_OOP.Memento;
 using Design_Patterns_OOP.Memento.Editor;
 using Design_Patterns_OOP.Memento.Document;
 using Design_Patterns_OOP.Observer;
 using Design_Patterns_OOP.Observer.Stock;
 using Design_Patterns_OOP.State;
-using Design_Patterns_OOP.State.DirectionService;
 using Design_Patterns_OOP.Strategy.ChatClient;
 using Design_Patterns_OOP.Strategy.ImageStorage;
 using Design_Patterns_OOP.TemplateMethodPattern;
 using Design_Patterns_OOP.TemplateMethodPattern.Window;
 using Design_Patterns_OOP.Visitor;
 using Design_Patterns_OOP.Visitor.EX;
+using BicyclingMode = Design_Patterns_OOP.State.DirectionService.BicyclingMode;
+using ChatClient = Design_Patterns_OOP.Strategy.ChatClient.ChatClient;
+using ChatWindow = Design_Patterns_OOP.TemplateMethodPattern.Window.ChatWindow;
 using Compressor = Design_Patterns_OOP.ChainOfResponsibility.Compressor;
+using DirectionService = Design_Patterns_OOP.State.DirectionService.DirectionService;
 using Document = Design_Patterns_OOP.Memento.Document.Document;
+using EditorHistory = Design_Patterns_OOP.Memento.EditorHistory;
 using HtmlDocument = Design_Patterns_OOP.Command.Editor.HtmlDocument;
+using NormalizeFilter = Design_Patterns_OOP.Visitor.EX.NormalizeFilter;
+using Product = Design_Patterns_OOP.Iterator.Product;
+using ProductCollection = Design_Patterns_OOP.Iterator.ProductCollection;
+using ReverbFilter = Design_Patterns_OOP.Visitor.EX.ReverbFilter;
+using SetContrastCommand = Design_Patterns_OOP.Command.VideoEditor.SetContrastCommand;
+using SetTextCommand = Design_Patterns_OOP.Command.VideoEditor.SetTextCommand;
+using StatusBar = Design_Patterns_OOP.Observer.Stock.StatusBar;
+using Stock = Design_Patterns_OOP.Observer.Stock.Stock;
+using StockListView = Design_Patterns_OOP.Observer.Stock.StockListView;
+using UndoCommand = Design_Patterns_OOP.Command.Editor.UndoCommand;
+using VideoEditor = Design_Patterns_OOP.Command.VideoEditor.VideoEditor;
+using WalkingMode = Design_Patterns_OOP.State.DirectionService.WalkingMode;
+using WavFile = Design_Patterns_OOP.Visitor.EX.WavFile;
 
 namespace Design_Patterns_OOP
 {
@@ -31,6 +60,8 @@ namespace Design_Patterns_OOP
     {
         static void Main(string[] args)
         {
+            #region Behavioural Patterns
+
             // MementoCalls();
             // StateCalls();
             // IteratorCalls();
@@ -40,7 +71,61 @@ namespace Design_Patterns_OOP
             // ObserverCalls();
             // MediatorCalls();
             // ChainOfResponsibilityCalls();
-            VisitorCalls();
+            // VisitorCalls();
+
+            // Behavioural Patterns Exercises
+            // MDemo.Show();
+            // SDemo.Show();
+            // ItDemo.Show();
+            // StDemo.Show();
+            // TDemo.Show();
+            // CDemo.Show();
+            // ODemo.Show();
+            // MedDemo.Show();
+            // ChDemo.Show();
+            // VDemo.Show();
+
+            #endregion
+
+
+            #region Structural Patterns
+
+            // CompositeCalls();
+            // AdapterCalls();
+            DecoratorCalls();
+
+            #endregion
+        }
+
+        private static void DecoratorCalls()
+        {
+            DecDemo.Show();
+            DecDemo.EXShow();
+        }
+
+        private static void AdapterCalls()
+        {
+            // AdDemo.Show();
+            // AdDemo.EXDemo();
+        }
+
+        private static void CompositeCalls()
+        {
+            var group1 = new Group();
+            group1.Add(new Shape()); // square
+            group1.Add(new Shape()); // square
+
+            var group2 = new Group();
+            group2.Add(new Shape()); // circle
+            group2.Add(new Shape()); // circle
+
+            group1.Render();
+            group1.Resize();
+            group2.Render();
+            group1.Move(10, 20);
+
+            Console.WriteLine();
+            CompositeDemo.Show();
         }
 
         private static void VisitorCalls()
@@ -172,7 +257,7 @@ namespace Design_Patterns_OOP
             imgStorage.Store("img.png", new PngCompressor(), new BlackAndWhiteFilter());
 
             var chatClient = new ChatClient();
-            chatClient.Send("Hello world", new AES());
+            chatClient.Send("Hello world", new Aes());
         }
 
         private static void IteratorCalls()
@@ -220,12 +305,12 @@ namespace Design_Patterns_OOP
 
             var dirService = new DirectionService(new WalkingMode());
 
-            dirService.getEta();
-            dirService.getDirection();
+            dirService.GetEta();
+            dirService.GetDirection();
 
             dirService.SetTravelMode(new BicyclingMode());
-            dirService.getEta();
-            dirService.getDirection();
+            dirService.GetEta();
+            dirService.GetDirection();
         }
 
         private static void MementoCalls()

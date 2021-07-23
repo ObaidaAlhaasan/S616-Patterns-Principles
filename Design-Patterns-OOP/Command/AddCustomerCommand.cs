@@ -2,16 +2,16 @@
 {
     public class AddCustomerCommand : ICommand
     {
-        private CustomerService CustomerService;
+        private CustomerService _customerService;
 
         public AddCustomerCommand(CustomerService customerService)
         {
-            CustomerService = customerService;
+            _customerService = customerService;
         }
 
         public void Execute()
         {
-            CustomerService.AddCustomer();
+            _customerService.AddCustomer();
         }
     }
 }
