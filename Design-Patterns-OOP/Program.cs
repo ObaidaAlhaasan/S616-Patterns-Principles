@@ -19,6 +19,7 @@ using Design_Patterns_OOP.Exercises.Strategy;
 using Design_Patterns_OOP.Exercises.TemplateMethod;
 using Design_Patterns_OOP.Exercises.Visitor;
 using Design_Patterns_OOP.Facade;
+using Design_Patterns_OOP.FlyWeight;
 using Design_Patterns_OOP.Iterator;
 using Design_Patterns_OOP.Mediator;
 using Design_Patterns_OOP.Mediator.EX;
@@ -94,9 +95,17 @@ namespace Design_Patterns_OOP
             // CompositeCalls();
             // AdapterCalls();
             // DecoratorCalls();
-            FacadeCalls();
+            // FacadeCalls();
+
+            FlyWeightCalls();
 
             #endregion
+        }
+
+        private static void FlyWeightCalls()
+        {
+            FlDemo.Show();
+            FlDemo.ExShow();
         }
 
         private static void FacadeCalls()
