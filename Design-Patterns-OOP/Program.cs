@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Reflection.Metadata;
 using Design_Patterns_OOP.Adapter;
+using Design_Patterns_OOP.Bridge;
 using Design_Patterns_OOP.ChainOfResponsibility;
 using Design_Patterns_OOP.ChainOfResponsibility.EX;
 using Design_Patterns_OOP.Command;
@@ -96,10 +97,16 @@ namespace Design_Patterns_OOP
             // AdapterCalls();
             // DecoratorCalls();
             // FacadeCalls();
+            // FlyWeightCalls();
 
-            FlyWeightCalls();
+            BridgeCalls();
 
             #endregion
+        }
+
+        private static void BridgeCalls()
+        {
+            BDemo.Show();
         }
 
         private static void FlyWeightCalls()
