@@ -18,6 +18,7 @@ using Design_Patterns_OOP.Exercises.State;
 using Design_Patterns_OOP.Exercises.Strategy;
 using Design_Patterns_OOP.Exercises.TemplateMethod;
 using Design_Patterns_OOP.Exercises.Visitor;
+using Design_Patterns_OOP.Facade;
 using Design_Patterns_OOP.Iterator;
 using Design_Patterns_OOP.Mediator;
 using Design_Patterns_OOP.Mediator.EX;
@@ -92,9 +93,16 @@ namespace Design_Patterns_OOP
 
             // CompositeCalls();
             // AdapterCalls();
-            DecoratorCalls();
+            // DecoratorCalls();
+            FacadeCalls();
 
             #endregion
+        }
+
+        private static void FacadeCalls()
+        {
+            FaDemo.Show();
+            FaDemo.ExShow();
         }
 
         private static void DecoratorCalls()
