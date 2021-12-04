@@ -2,28 +2,20 @@
 
 namespace Design_Patterns_OOP.Clean_Code_Patterns.Observer
 {
-    public class Subject
+    public class Subject<T>
     {
-        public List<Observer> Observers { get; set; }
+        private List<IObserver<T>> Observers { get; set; }
 
-        public void Register(Observer o) => Observers.Add(o);
+        public void Register(IObserver<T> o) => Observers.Add(o);
 
-        public void NotifyObservers()
+        public void NotifyObservers(T pushedData)
         {
             foreach (var observer in Observers)
-                observer.Update();
+                observer.Update(pushedData);
         }
 
-        public void Remove(Observer o) => Observers.Remove(o);
+        public void Remove(IObserver<T> o) => Observers.Remove(o);
 
         public void Clear() => Observers.Clear();
-    }
-
-    public class Observer
-    {
-        public void Update()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }
