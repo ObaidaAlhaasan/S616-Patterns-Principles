@@ -2,6 +2,8 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design-Patterns-OOP", "Design-Patterns-OOP\Design-Patterns-OOP.csproj", "{4073C019-8863-41FD-9EC6-1C24C227134E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Design.Patterns.OOP.Tests", "Design.Patterns.OOP.Tests\Design.Patterns.OOP.Tests.csproj", "{A3FF6F41-48F9-4959-9D55-17C63BCB0C1C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +14,9 @@ Global
 		{4073C019-8863-41FD-9EC6-1C24C227134E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4073C019-8863-41FD-9EC6-1C24C227134E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4073C019-8863-41FD-9EC6-1C24C227134E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3FF6F41-48F9-4959-9D55-17C63BCB0C1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3FF6F41-48F9-4959-9D55-17C63BCB0C1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3FF6F41-48F9-4959-9D55-17C63BCB0C1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3FF6F41-48F9-4959-9D55-17C63BCB0C1C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

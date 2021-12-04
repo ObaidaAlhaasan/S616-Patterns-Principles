@@ -1,0 +1,10 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=2af70288_002Da099_002D47b8_002D8ec2_002D277dd378070c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Singletons_CreatedProperly" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.Clean_Code.SingletonTests.SingletonTests.Singletons_CreatedProperly&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.Clean_Code.MonoStateTests.MonoStateTests.AddedStateServiceRegistryTest&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.Clean_Code.NullObjectTests.NullObjectTests.QueryNonExistEmployee_ShouldNotThrowError&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.Clean_Code.NullObjectTests.NullObjectTests.QueryExistingEmployee_ShouldReturnIt&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.Clean_Code.NullObjectTests.NullObjectTests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
