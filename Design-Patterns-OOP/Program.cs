@@ -8,6 +8,12 @@ using Design_Patterns_OOP.Command;
 using Design_Patterns_OOP.Command.Editor;
 using Design_Patterns_OOP.Composite;
 using Design_Patterns_OOP.Composite.EX;
+using Design_Patterns_OOP.Creational;
+using Design_Patterns_OOP.Creational.AbstractFactory;
+using Design_Patterns_OOP.Creational.Builder;
+using Design_Patterns_OOP.Creational.Factory;
+using Design_Patterns_OOP.Creational.Prototype;
+using Design_Patterns_OOP.Creational.Singleton;
 using Design_Patterns_OOP.Decorator;
 using Design_Patterns_OOP.Exercises.ChainOfResponsibility;
 using Design_Patterns_OOP.Exercises.Command;
@@ -28,6 +34,7 @@ using Design_Patterns_OOP.Memento.Editor;
 using Design_Patterns_OOP.Memento.Document;
 using Design_Patterns_OOP.Observer;
 using Design_Patterns_OOP.Observer.Stock;
+using Design_Patterns_OOP.Proxy;
 using Design_Patterns_OOP.State;
 using Design_Patterns_OOP.Strategy.ChatClient;
 using Design_Patterns_OOP.Strategy.ImageStorage;
@@ -43,6 +50,7 @@ using DirectionService = Design_Patterns_OOP.State.DirectionService.DirectionSer
 using Document = Design_Patterns_OOP.Memento.Document.Document;
 using EditorHistory = Design_Patterns_OOP.Memento.EditorHistory;
 using HtmlDocument = Design_Patterns_OOP.Command.Editor.HtmlDocument;
+using Logger = Design_Patterns_OOP.ChainOfResponsibility.Logger;
 using NormalizeFilter = Design_Patterns_OOP.Visitor.EX.NormalizeFilter;
 using Product = Design_Patterns_OOP.Iterator.Product;
 using ProductCollection = Design_Patterns_OOP.Iterator.ProductCollection;
@@ -98,10 +106,51 @@ namespace Design_Patterns_OOP
             // DecoratorCalls();
             // FacadeCalls();
             // FlyWeightCalls();
+            // BridgeCalls();
+            // ProxyCalls();
+            // ProtoTypeCalls();
+            // SingleTonCalls();
+            // FactoryMethodCalls();
+            // AbstractFactoryCalls();
 
-            BridgeCalls();
+            BuilderCalls();
 
             #endregion
+        }
+
+        private static void BuilderCalls()
+        {
+            // BuilderDemo.Show();
+            BuilderDemo.ExShow();
+        }
+
+        private static void AbstractFactoryCalls()
+        {
+            AbstractFactoryDemo.Show();
+            AbstractFactoryDemo.ExShow();
+        }
+
+        private static void FactoryMethodCalls()
+        {
+            FactoryMethodDemo.Show();
+            FactoryMethodDemo.ExShow();
+        }
+
+        private static void ProtoTypeCalls()
+        {
+            PrototypeDemo.Show();
+        }
+
+        private static void SingleTonCalls()
+        {
+            SingleDemo.Show();
+            SingleDemo.EXShow();
+        }
+
+        private static void ProxyCalls()
+        {
+            PrDemo.Show();
+            PrDemo.ExShow();
         }
 
         private static void BridgeCalls()
