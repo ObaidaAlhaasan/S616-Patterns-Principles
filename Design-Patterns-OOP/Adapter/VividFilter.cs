@@ -4,7 +4,7 @@
     {
         public void Apply(Image image)
         {
-            System.Out.Println("Applying Vivid Filter");
+            Out.Println("Applying Vivid Filter");
         }
     }
 }

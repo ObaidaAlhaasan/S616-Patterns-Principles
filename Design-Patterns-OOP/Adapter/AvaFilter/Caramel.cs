@@ -8,7 +8,7 @@
 
         public void Render(Image image)
         {
-            System.Out.Println("Applying Caramel Filter");
+            Out.Println("Applying Caramel Filter");
         }
     }
 }

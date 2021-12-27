@@ -4,6 +4,7 @@
         <OutputType>Exe</OutputType>
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>Design_Patterns_OOP</RootNamespace>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
 
 </Project>

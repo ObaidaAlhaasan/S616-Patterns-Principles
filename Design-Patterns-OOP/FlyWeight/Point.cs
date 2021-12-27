@@ -17,7 +17,7 @@ namespace Design_Patterns_OOP.FlyWeight
 
         public void Draw()
         {
-            System.Out.println($"{icon.Type} at ({x.ToString()}, {y.ToString()})");
+            Out.println($"{icon.Type} at ({x.ToString()}, {y.ToString()})");
         }
     }
 }

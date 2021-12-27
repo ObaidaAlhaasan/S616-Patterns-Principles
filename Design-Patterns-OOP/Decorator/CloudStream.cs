@@ -9,7 +9,7 @@
 
         public void write(string data)
         {
-            System.Out.println("Storing " + data);
+            Out.println("Storing " + data);
         }
     }
 }

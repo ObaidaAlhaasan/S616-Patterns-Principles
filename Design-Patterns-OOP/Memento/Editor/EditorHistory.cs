@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Design_Patterns_OOP.Memento
+namespace Design_Patterns_OOP.Memento.Editor
 {
     public class EditorHistory
     {

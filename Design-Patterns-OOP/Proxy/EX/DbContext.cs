@@ -10,7 +10,7 @@ namespace Design_Patterns_OOP.Proxy.EX
         {
             // Automatically generate SQL statements
             // to read the product with the given ID.
-            System.Out.println($"SELECT * FROM products WHERE product_id = {id} \n");
+            Out.println($"SELECT * FROM products WHERE product_id = {id} \n");
 
             // Simulate reading a product object from a database.
             var product = new ProductProxy(id, this);
@@ -24,7 +24,7 @@ namespace Design_Patterns_OOP.Proxy.EX
             // Automatically generate SQL statements
             // to update the database.
             foreach (var updatedObject in updatedObjects.Values)
-                System.Out.println($"UPDATE products SET name = '{updatedObject.getName()}' WHERE product_id = {updatedObject.getId()} \n");
+                Out.println($"UPDATE products SET name = '{updatedObject.getName()}' WHERE product_id = {updatedObject.getId()} \n");
 
             updatedObjects.Clear();
         }

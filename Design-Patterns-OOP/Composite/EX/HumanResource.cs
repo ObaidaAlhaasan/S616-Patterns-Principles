@@ -4,7 +4,7 @@
     {
         public override void Deploy()
         {
-            System.Out.Println("Deploying a human resource");
+            Out.Println("Deploying a human resource");
         }
     }
 }

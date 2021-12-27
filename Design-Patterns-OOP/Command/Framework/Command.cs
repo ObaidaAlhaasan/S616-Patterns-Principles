@@ -1,4 +1,4 @@
-﻿namespace Design_Patterns_OOP.Command
+﻿namespace Design_Patterns_OOP.Command.Framework
 {
     public interface ICommand
     {

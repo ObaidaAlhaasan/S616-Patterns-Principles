@@ -1,6 +1,4 @@
-﻿using Design_Patterns_OOP.Creational.AbstractFactory.EX;
-
-namespace Design_Patterns_OOP.Creational.AbstractFactory
+﻿namespace Design_Patterns_OOP.Creational.AbstractFactory.EX
 {
     public class HomePage
     {
@@ -12,8 +10,8 @@ namespace Design_Patterns_OOP.Creational.AbstractFactory
             mealPlan = factory.CreateMealPlan();
             workoutPlan = factory.CreateWorkoutPlan();
 
-            System.Out.println(workoutPlan);
-            System.Out.println(mealPlan);
+            Out.println(workoutPlan);
+            Out.println(mealPlan);
         }
     }
 

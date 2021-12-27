@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Design_Patterns_OOP.Command
+﻿namespace Design_Patterns_OOP.Command.Framework
 {
     public class Button
     {

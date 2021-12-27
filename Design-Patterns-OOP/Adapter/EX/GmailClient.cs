@@ -4,17 +4,17 @@
     {
         public void connect()
         {
-            System.Out.println("Connecting to Gmail");
+            Out.println("Connecting to Gmail");
         }
 
         public void getEmails()
         {
-            System.Out.println("Downloading emails from Gmail");
+            Out.println("Downloading emails from Gmail");
         }
 
         public void disconnect()
         {
-            System.Out.println("Disconnecting from Gmail");
+            Out.println("Disconnecting from Gmail");
         }
     }
 }

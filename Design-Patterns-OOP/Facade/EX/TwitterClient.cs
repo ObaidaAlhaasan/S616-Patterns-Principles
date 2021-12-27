@@ -7,7 +7,7 @@ namespace Design_Patterns_OOP.Facade.EX
     {
         public List<Tweet> getRecentTweets(String accessToken)
         {
-            System.Out.println("Getting recent tweets");
+            Out.println("Getting recent tweets");
 
             return new ArrayList<Tweet>();
         }

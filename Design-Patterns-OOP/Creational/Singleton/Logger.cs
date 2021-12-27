@@ -27,7 +27,7 @@ namespace Design_Patterns_OOP.Creational.Singleton
 
         public void Write(string message)
         {
-            System.Out.println("Writing a message to the log.");
+            Out.println("Writing a message to the log.");
         }
     }
 }

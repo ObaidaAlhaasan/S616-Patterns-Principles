@@ -1,4 +1,4 @@
-﻿namespace Design_Patterns_OOP.Creational.AbstractFactory
+﻿namespace Design_Patterns_OOP.Creational.AbstractFactory.EX
 {
     public interface IWorkoutPlan
     {

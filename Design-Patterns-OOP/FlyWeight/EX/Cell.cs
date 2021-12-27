@@ -43,7 +43,7 @@ namespace Design_Patterns_OOP.FlyWeight.EX
 
         public void render()
         {
-            System.Out.println($"({{row}}, {column}): {content} [{Context.fontFamily}]\n");
+            Out.println($"({{row}}, {column}): {content} [{Context.fontFamily}]\n");
         }
     }
 }

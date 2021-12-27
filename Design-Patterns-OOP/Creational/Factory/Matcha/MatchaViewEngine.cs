@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-namespace Design_Patterns_OOP.Creational.Factory
+namespace Design_Patterns_OOP.Creational.Factory.Matcha
 {
     public interface IViewEngine
     {

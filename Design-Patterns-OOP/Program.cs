@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Reflection.Metadata;
+using Design_Patterns_OOP.ActiveObject;
 using Design_Patterns_OOP.Adapter;
 using Design_Patterns_OOP.Bridge;
 using Design_Patterns_OOP.ChainOfResponsibility;
@@ -48,7 +49,7 @@ using ChatWindow = Design_Patterns_OOP.TemplateMethodPattern.Window.ChatWindow;
 using Compressor = Design_Patterns_OOP.ChainOfResponsibility.Compressor;
 using DirectionService = Design_Patterns_OOP.State.DirectionService.DirectionService;
 using Document = Design_Patterns_OOP.Memento.Document.Document;
-using EditorHistory = Design_Patterns_OOP.Memento.EditorHistory;
+using EditorHistory = Design_Patterns_OOP.Memento.Editor.EditorHistory;
 using HtmlDocument = Design_Patterns_OOP.Command.Editor.HtmlDocument;
 using Logger = Design_Patterns_OOP.ChainOfResponsibility.Logger;
 using NormalizeFilter = Design_Patterns_OOP.Visitor.EX.NormalizeFilter;
@@ -112,10 +113,12 @@ namespace Design_Patterns_OOP
             // SingleTonCalls();
             // FactoryMethodCalls();
             // AbstractFactoryCalls();
-
-            BuilderCalls();
+            // BuilderCalls();
 
             #endregion
+
+            // ActiveObjectDemo.Show();
+            ActiveObjectDemo.Show2();
         }
 
         private static void BuilderCalls()

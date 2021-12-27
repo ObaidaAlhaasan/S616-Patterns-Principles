@@ -1,4 +1,6 @@
-﻿namespace System
+﻿using System;
+
+namespace Design_Patterns_OOP
 {
     public static class Out
     {

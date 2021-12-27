@@ -8,7 +8,7 @@
 
         public void Render(Image image)
         {
-            System.Out.Println("Applying Rose Filter");
+            Out.Println("Applying Rose Filter");
         }
     }
 }
