@@ -1,6 +1,7 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b9cec35b_002Dd068_002D43af_002D8ccb_002D23bc53dcdd21/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestConcurrency" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=744c1330_002Df6e1_002D4cc3_002D90ca_002D4ca770c19b21/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="TestTimeChange" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.ActiveObjectTests.ActiveObjectTests2.TestConcurrency&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.ClockTests.ClockDriverTests.TestTimeChange&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;xUnit::A3FF6F41-48F9-4959-9D55-17C63BCB0C1C::net6.0::Design.Patterns.OOP.Tests.ClockTests.ClockDriverTest&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
